@@ -7,3 +7,5 @@ joblib
 matplotlib
 seaborn
 plotly
+gspread
+oauth2client
