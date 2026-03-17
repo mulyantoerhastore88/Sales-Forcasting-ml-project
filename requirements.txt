@@ -9,3 +9,4 @@ seaborn
 plotly
 gspread
 oauth2client
+prophet
