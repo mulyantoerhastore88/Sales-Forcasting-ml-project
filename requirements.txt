@@ -10,3 +10,6 @@ plotly
 gspread
 oauth2client
 prophet
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
