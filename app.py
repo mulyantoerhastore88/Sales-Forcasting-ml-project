@@ -1,8 +1,3 @@
-# app.py
-# Aplikasi Forecasting untuk S&OP - Demand & Supply Planner Senior
-# Versi Enterprise dengan Multiple Models (Prophet, XGBoost, Ensemble)
-# Dilengkapi dengan Export ke PPT/Excel dan Advanced Analytics
-
 import streamlit as st
 import pandas as pd
 import numpy as np
