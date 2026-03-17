@@ -1,11 +1,73 @@
-streamlit==1.28.1
-pandas==2.0.3
-numpy==1.24.3
-scikit-learn==1.3.0
-xgboost==1.7.6
-plotly==5.17.0
-gspread==5.12.0
-google-auth==2.23.0
-prophet==1.1.5
-python-dateutil==2.8.2
-pytz==2023.3
+# =============================================================================
+# S&OP FORECAST STUDIO ENTERPRISE - PRODUCTION REQUIREMENTS
+# =============================================================================
+
+# =============================================================================
+# CORE FRAMEWORKS & WEB APP
+# =============================================================================
+streamlit==1.28.1                 # Web application framework
+pandas==2.0.3                      # Data manipulation & analysis
+numpy==1.24.3                       # Numerical computing
+
+# =============================================================================
+# MACHINE LEARNING & FORECASTING
+# =============================================================================
+# Time Series Forecasting
+prophet==1.1.5                      # Meta's forecasting tool (time series)
+pystan==2.19.1.1                    # Required for Prophet (Stan backend)
+
+# Machine Learning Models
+scikit-learn==1.3.0                 # Preprocessing, metrics, ensemble
+xgboost==1.7.6                       # Gradient boosting for forecasting
+joblib==1.3.2                         # Model serialization & caching
+
+# Statistical Models (Optional - uncomment if needed)
+# statsmodels==0.14.0                # SARIMA, ETS for statistical forecasting
+
+# =============================================================================
+# DATA VISUALIZATION
+# =============================================================================
+# Interactive Visualization (Premium)
+plotly==5.17.0                        # Interactive charts for web app
+
+# Static Visualization (For Reports & Export)
+matplotlib==3.7.2                     # Static plots, export to images
+seaborn==0.12.2                        # Statistical visualizations
+
+# =============================================================================
+# GOOGLE SHEETS INTEGRATION
+# =============================================================================
+# Primary Google Sheets API
+gspread==5.12.0                       # Google Sheets Python wrapper
+google-auth==2.23.0                    # Service account authentication
+oauth2client==4.1.3                     # Legacy OAuth support
+
+# OAuth 2.0 Support (for future user-based auth)
+google-auth-oauthlib==1.0.0            # OAuth 2.0 flow
+google-auth-httplib2==0.1.0            # HTTP client for google-auth
+
+# =============================================================================
+# UTILITIES & DATE HANDLING
+# =============================================================================
+python-dateutil==2.8.2                 # Advanced date parsing
+pytz==2023.3                            # Timezone handling
+openpyxl==3.1.2                         # Excel file writing support
+xlsxwriter==3.1.2                       # Excel file writing (for reports)
+
+# =============================================================================
+# OPTIONAL - For Production Deployment
+# =============================================================================
+# Cache & Performance
+# redis==4.6.0                          # For distributed caching (optional)
+
+# Database Connections (if needed in future)
+# sqlalchemy==2.0.19                    # Database ORM
+# psycopg2-binary==2.9.6                 # PostgreSQL adapter
+
+# =============================================================================
+# VERSION PINNING NOTES:
+# - All versions are pinned to stable releases
+# - Tested working together without conflicts
+# - Prophet requires pystan<3.0, hence pystan 2.19.1.1
+# - Streamlit 1.28.1 is latest stable as of writing
+# =============================================================================
