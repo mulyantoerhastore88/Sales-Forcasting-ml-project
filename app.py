@@ -1,7 +1,3 @@
-# app.py
-# Aplikasi Forecasting untuk S&OP - Demand & Supply Planner Senior
-# Dibangun dengan Streamlit, Prophet, dan Google Sheets
-
 import streamlit as st
 import pandas as pd
 import numpy as np
